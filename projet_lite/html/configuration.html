@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Apprendre le Japonais</title>
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../styles/configuration.css">
+		<link rel="icon" type="image/png" href="../assets/JapaneseFlag.png" />
+		<!-- Mathis R. Celia J.-->
+	</head>
+	<body>
+		<div class="header">
+			<a href="../index.html">Accueil</a>
+			<h1>Configuration</h1>
+			<a href="../html/aide.html">Aide</a>
+		</div>
+		<div class="main">
+			<div id="choixJeu">
+				<div id="jeu1" onclick="choixJeu(1)">
+					<p>Jeu 1 :</p>
+					<p>Deviner la prononciation</p>
+				</div>
+				<div id="jeu2" onclick="choixJeu(2)">
+					<p>Jeu 2 :</p>
+					<p>Deviner la caractère</p>
+				</div>
+			</div>
+			<div id="choixDifficulte">
+				<p>Difficulté :</p>
+				<a onclick="setChoixDifficulte('facile')" href="jeu.html">Facile</a>
+				<a onclick="setChoixDifficulte('normal')" href="jeu.html">Normal</a>
+				<a onclick="setChoixDifficulte('difficile')" href="jeu.html">Difficile</a>
+			</div>
+		</div>
+		<div class="footer">
+			<p>C. Jordan - M. Ruffieux - M2 MIASHS - 2022/2023</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/models/Vocabulaire.js"></script>
+	<script type="text/javascript" src="../js/models/Lecon.js"></script>
+	<script type="text/javascript" src="../js/session.js"></script>
+	<script type="text/javascript" src="../js/config.js"></script>
+</html>

@@ -1,0 +1,69 @@
+
+
+
+#choixJeu{
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#jeu1, #jeu2{
+	height: 15vh;
+	width: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	background-color: lightgrey;
+
+	border-radius: 6px;
+}
+
+#jeu1:hover, #jeu2:hover{
+	box-shadow: 1px 1px 5px 1px black;
+	cursor: pointer;
+	background-color: #296487;
+	color: white;
+	transition: 0.3s;
+}
+
+#choixJeu p, #choixDifficulte p{
+	margin: 10px;
+	font-size: 1.5em;
+}
+
+#choixDifficulte{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#choixDifficulte a{
+	margin: 1.2vh;
+	height: 50px;
+	width: 100px;
+	font-size: 1.2em;
+	border-radius: 6px;
+	background-color: lightgrey;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+#choixDifficulte a:hover{
+	background-color: white;
+    box-shadow: 1px 1px 5px 1px black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
