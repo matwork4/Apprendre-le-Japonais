@@ -54,7 +54,7 @@
 #reponses .btn:hover{
 	box-shadow: 1px 1px 5px 1px black;
 	cursor: pointer;
-	background-color: seagreen;
+	background-color: #296487;
 	color: white;
 	transition: 0.3s;
 }
