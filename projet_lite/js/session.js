@@ -13,7 +13,7 @@ function setChoixJeu(num){
 function getChoixJeu(){
 	let a = sessionStorage.getItem('idJeu')
 	//console.log("idJeu = "+a);
-	return a;
+	return parseInt(a);
 }
 
 
@@ -23,7 +23,7 @@ function setChoixLecon(num){
 function getChoixLecon(){
 	let a = sessionStorage.getItem('idLecon')
 	//console.log("idJeu = "+a);
-	return a;
+	return parseInt(a);
 }
 
 /* Difficulté : facile, normale, difficile
@@ -34,7 +34,7 @@ function setChoixDifficulte(s){
 }
 function getChoixDifficulte(){
 	let a = sessionStorage.getItem('difficulte')
-	//console.log("idJeu = "+a);
+	//console.log("difficulte = "+a);
 	return a;
 }
 
