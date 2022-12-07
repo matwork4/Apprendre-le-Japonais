@@ -12,6 +12,7 @@ var difficulte = getChoixDifficulte();
 var leconMelangee = initVocMelange(idLecon);
 var nbReponses = 0;
 var devinePrononciation;
+var l;
 
 if(difficulte == "facile"){
 	nbReponses = 2;
@@ -32,6 +33,8 @@ if(idJeu == 1){
 
 hideTerminer();
 hideSuivant();
+hideScore();
+genereDOM();
 
 function hideTerminer(){
 	var elem = document.getElementById("terminer");
@@ -51,6 +54,24 @@ function afficheSuivant(){
 	//console.log("affiche");
 	var elem = document.getElementById("suivant");
 	elem.style.visibility = "";
+}
+
+function hideScore(){
+	var elem = document.getElementById("score_div");
+	elem.style.visibility = "hidden";
+}
+function afficheScore(){
+	//console.log("affiche");
+	var elem = document.getElementById("score");
+	elem.innerHTML = "Score : "+score+"/"+leconMelangee.length;
+	var elem2 = document.getElementById("score_div");
+	elem2.style.visibility = "";
+}
+
+//change la page dans le dom
+function updatePageDOM(){
+	var elem = document.getElementById("page");
+	elem.innerHTML = page+"/"+leconMelangee.length;
 }
 
 
@@ -73,6 +94,13 @@ function genereteAnswers(){
 			isB = true;
 		}
 	}
+
+	/* idée : copier les réponses dans un nouveau tableau, 
+	 * et a chaque tirage random la retirer du tableau 
+	 *
+	 */
+
+
 	//Si il n'y a pas déjà une bonne réponse
 	if(!isB){
 		//choisit l'id de la bonne reponse
@@ -87,17 +115,31 @@ function genereteAnswers(){
 }
 
 
-if(devinePrononciation){
-	addQuestionDOM(leconMelangee[page-1].caractere);
-}else{
-	addQuestionDOM(leconMelangee[page-1].traduction);
+
+//Genere tout le DOM
+function genereDOM(){
+	if(devinePrononciation){
+		addQuestionDOM(leconMelangee[page-1].caractere);
+	}else{
+		addQuestionDOM(leconMelangee[page-1].traduction);
+	}
+	//var l = ['A','B','C','D'];
+	l = genereteAnswers();
+	if(devinePrononciation){
+		addReponsesDOM(l,leconMelangee[page-1].traduction);
+	}else{
+		addReponsesDOM(l,leconMelangee[page-1].caractere);
+	}
+	updatePageDOM();
 }
-//var l = ['A','B','C','D'];
-var l = genereteAnswers();
-if(devinePrononciation){
-	addReponsesDOM(l,leconMelangee[page-1].traduction);
-}else{
-	addReponsesDOM(l,leconMelangee[page-1].caractere);
+
+//Question suivante
+function suivant(){
+	page++;
+	dejaJoue = false;
+	hideSuivant();
+	removeReponsesDOM();
+	genereDOM();
 }
 
 /* Ajoute le caractère à deviner
@@ -151,7 +193,12 @@ function repondre(id,isBonneReponse){
 		mauvaiseReponse(id);
 		bonneReponse(idBonneReponse);
 	}
-	afficheSuivant();
+	if(page==leconMelangee.length){
+		afficheTerminer();
+		afficheScore();
+	}else{
+		afficheSuivant();
+	}
 	dejaJoue = true;
   }
 
@@ -174,6 +221,9 @@ function mauvaiseReponse(id){
 }
 
 
+
+
+//Renvoie la liste de vocabulaire mélangée en fonction de l'id leçon
 function initVocMelange(idL){
 	if(idL == 1){
 		return shuffle(L1.list);
@@ -181,15 +231,17 @@ function initVocMelange(idL){
 		return shuffle(L2.list);
 	}else if(idL == 3){
 		return shuffle(L3.list);
+	}else if(idL == 4){
+		return shuffle(L4.list);
+	}else if(idL == 5){
+		return shuffle(L5.list);
+	}else if(idL == 6){
+		return shuffle(L6.list);
 	}else{
 		console.log("Erreur idLecon : "+idL);
 	}
 	
 }
-
-
-
-
 
 
 /* ===================================
