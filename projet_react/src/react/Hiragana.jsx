@@ -1,4 +1,7 @@
 import '../styles/hiragana.css';
+import React from 'react';
+import { Link } from "react-router-dom";
+import HiraganaGame from './HiraganaGame';
 
 const Hiragana = () => {
     return (
@@ -8,7 +11,7 @@ const Hiragana = () => {
                 <div class="lecon" onclick="">
                     <div class="button">
                         <h3>Leçon 1</h3>
-                        <a href="#">Jouer</a>
+                        <Link to="/HiraganaGame?1">Jouer</Link>
                     </div>
                     <table>
                         <tr>
@@ -37,7 +40,7 @@ const Hiragana = () => {
                 <div class="lecon" onclick="">
                     <div class="button">
                         <h3>Leçon 2</h3>
-                        <a href="#">Jouer</a>
+                        <Link to="/HiraganaGame?2">Jouer</Link>
                     </div>
                     <table>
                         <tr>
@@ -66,7 +69,7 @@ const Hiragana = () => {
                 <div class="lecon" onclick="">
                     <div class="button">
                         <h3>Leçon 3</h3>
-                        <a href="#">Jouer</a>
+                        <Link to="/HiraganaGame?3">Jouer</Link>
                     </div>
                     <table>
                         <tr>
@@ -146,7 +149,7 @@ const Hiragana = () => {
                     </table>
                     <div class="button">
                         <h3>Leçon 4</h3>
-                        <a href="#">Jouer</a>
+                        <Link to="/HiraganaGame?4">Jouer</Link>
                     </div>
                 </div>
                 <div class="lecon" onclick="">
@@ -178,7 +181,7 @@ const Hiragana = () => {
                     </table>
                     <div class="button">
                         <h3>Leçon 5</h3>
-                        <a href="#">Jouer</a>
+                        <Link to="/HiraganaGame?5">Jouer</Link>
                     </div>
                 </div>
                 <div class="lecon" onclick="">
@@ -207,7 +210,7 @@ const Hiragana = () => {
                     </table>
                     <div class="button">
                         <h3>Leçon 6</h3>
-                        <a href="#">Jouer</a>
+                        <Link to="/HiraganaGame?6">Jouer</Link>
                     </div>
                 </div>
             </div>
