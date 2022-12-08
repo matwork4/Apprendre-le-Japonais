@@ -34,6 +34,22 @@ body{
 
 .main p{
     position: absolute;
-    top: 20vh;
+    top: 10vh;
     left: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    background-color: var(--main-bg-color);
+    
+    
+    border-radius: 5px;
+    margin: 5vh;
+    color: white;
+    padding: 3vh;
+
+    font-size: 1em;
 }

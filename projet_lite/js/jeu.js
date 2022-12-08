@@ -64,6 +64,17 @@ function afficheScore(){
 	//console.log("affiche");
 	var elem = document.getElementById("score");
 	elem.innerHTML = "Score : "+score+"/"+leconMelangee.length;
+	
+	var elem3 = document.getElementById("motivation");
+	if(score<(leconMelangee.length/2)){
+		elem3.innerHTML = "Tu feras mieux la prochaine fois 😉";
+	}else if(score==leconMelangee.length){
+		elem3.innerHTML = "🎆 C'est parfait, félicitations ! 🎆";
+	}else{
+		elem3.innerHTML = "Continue l'entrainement 💪";
+	}
+
+
 	var elem2 = document.getElementById("score_div");
 	elem2.style.visibility = "";
 }
