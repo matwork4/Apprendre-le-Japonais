@@ -1,3 +1,9 @@
+body{
+    background: url("../assets/background/street2.png");
+    background-size: cover;
+    background-position: center;
+}
+
 .main img{
 	height: 80vh;
 	width: 70vh;
@@ -50,7 +56,7 @@
     border-radius: 5px;
 }
 .lecon a:hover{
-	background-color: #296487;
+	background-color: var(--main-bg-color);
 	color: white;
     box-shadow: 1px 1px 5px 1px black;
     cursor: pointer;
@@ -65,7 +71,7 @@ table{
 
 .voc{
 	border: 1px solid black;
-	background-color: whitesmoke;
+	background-color: var(--button-color);
 	height: 50px;
 	width: 40px;
 	text-align: center;
@@ -84,7 +90,7 @@ table{
 
 	box-shadow: 1px 1px 5px 1px black;
 	cursor: pointer;
-	background-color: #296487;
+	background-color: var(--main-bg-color);
 	color: white;
 	transition: 0.3s;
 }
