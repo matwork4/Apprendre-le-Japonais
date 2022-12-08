@@ -1,4 +1,8 @@
-
+body{
+    background: url("../assets/background/town2.png");
+    background-size: cover;
+    background-position: center;
+}
 
 
 #choixJeu{
@@ -19,7 +23,7 @@
 	align-items: center;
 
 	text-align: center;
-	background-color: lightgrey;
+	background-color: var(--button-color);
 
 	border-radius: 6px;
 }
@@ -27,7 +31,7 @@
 #jeu1:hover, #jeu2:hover{
 	box-shadow: 1px 1px 5px 1px black;
 	cursor: pointer;
-	background-color: #296487;
+	background-color: var(--main-bg-color);
 	color: white;
 	transition: 0.3s;
 }
@@ -51,7 +55,7 @@
 	width: 100px;
 	font-size: 1.2em;
 	border-radius: 6px;
-	background-color: lightgrey;
+	background-color: var(--button-color);
 	display: flex;
     justify-content: center;
     align-items: center;

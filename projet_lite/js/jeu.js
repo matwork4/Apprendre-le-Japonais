@@ -64,6 +64,17 @@ function afficheScore(){
 	//console.log("affiche");
 	var elem = document.getElementById("score");
 	elem.innerHTML = "Score : "+score+"/"+leconMelangee.length;
+	
+	var elem3 = document.getElementById("motivation");
+	if(score<(leconMelangee.length/2)){
+		elem3.innerHTML = "Tu feras mieux la prochaine fois 😉";
+	}else if(score==leconMelangee.length){
+		elem3.innerHTML = "🎆 C'est parfait, félicitations ! 🎆";
+	}else{
+		elem3.innerHTML = "Continue l'entrainement 💪";
+	}
+
+
 	var elem2 = document.getElementById("score_div");
 	elem2.style.visibility = "";
 }
@@ -237,6 +248,18 @@ function initVocMelange(idL){
 		return shuffle(L5.list);
 	}else if(idL == 6){
 		return shuffle(L6.list);
+	}else if(idL == 7){
+		return shuffle(L7.list);
+	}else if(idL == 8){
+		return shuffle(L8.list);
+	}else if(idL == 9){
+		return shuffle(L9.list);
+	}else if(idL == 10){
+		return shuffle(L10.list);
+	}else if(idL == 11){
+		return shuffle(L11.list);
+	}else if(idL == 12){
+		return shuffle(L12.list);
 	}else{
 		console.log("Erreur idLecon : "+idL);
 	}

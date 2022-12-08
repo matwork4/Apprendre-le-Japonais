@@ -38,8 +38,17 @@ function getChoixDifficulte(){
 	return a;
 }
 
-
-
+/* Type : hiragana ou katakana
+ *
+ */
+function setChoixType(s){
+	sessionStorage.setItem('type',s);
+}
+function getChoixType(){
+	let a = sessionStorage.getItem('type')
+	//console.log("type = "+a);
+	return a;
+}
 
 
 

@@ -14,7 +14,11 @@ function openWriting(car){
 	var elem = document.getElementById("displayWriting");
 	elem.style.display = "";
 	var elem2 = document.getElementById("img");
-	elem2.style.background = "url('../assets/writing/hiragana/"+car+".png')";
+	if(getChoixType()=="hiragana"){
+		elem2.style.background = "url('../assets/writing/hiragana/"+car+".png')";
+	}else{
+		elem2.style.background = "url('../assets/writing/katakana/"+car+".png')";
+	}
 	elem2.style.backgroundSize = "cover";
 }
 
