@@ -73,7 +73,7 @@ body{
 	margin-top: 8vh;
 }
 
-.fleches .btn{
+.fleches .btn, .fleches a{
 	height: 50px;
 	width: 120px;
 	font-size: 1.2em;
@@ -86,7 +86,7 @@ body{
     color: black;
 }
 
-.fleches .btn:hover{
+.fleches .btn:hover, .fleches a:hover{
 	background-color: white;
     box-shadow: 1px 1px 5px 1px black;
     cursor: pointer;
