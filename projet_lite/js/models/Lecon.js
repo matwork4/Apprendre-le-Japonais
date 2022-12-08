@@ -150,4 +150,126 @@ L6.addVoc(new Vocabulaire("しゅ","shu",1));
 L6.addVoc(new Vocabulaire("しょ","sho",1));
 
 
+let L7 = new Lecon("7","Katakana AKS");
+
+L7.addVoc(new Vocabulaire("ア","a",2));
+L7.addVoc(new Vocabulaire("イ","i",2));
+L7.addVoc(new Vocabulaire("ウ","u",2));
+L7.addVoc(new Vocabulaire("エ","e",2));
+L7.addVoc(new Vocabulaire("オ","o",2));
+L7.addVoc(new Vocabulaire("カ","ka",2));
+L7.addVoc(new Vocabulaire("キ","ki",2));
+L7.addVoc(new Vocabulaire("ク","ku",2));
+L7.addVoc(new Vocabulaire("ケ","ke",2));
+L7.addVoc(new Vocabulaire("コ","ko",2));
+L7.addVoc(new Vocabulaire("サ","sa",2));
+L7.addVoc(new Vocabulaire("シ","shi",2));
+L7.addVoc(new Vocabulaire("ス","su",2));
+L7.addVoc(new Vocabulaire("セ","se",2));
+L7.addVoc(new Vocabulaire("ソ","so",2));
+
+
+let L8 = new Lecon("8","Katakana TNH");
+
+L8.addVoc(new Vocabulaire("タ","ta",2));
+L8.addVoc(new Vocabulaire("チ","chi",2));
+L8.addVoc(new Vocabulaire("ツ","tsu",2));
+L8.addVoc(new Vocabulaire("テ","te",2));
+L8.addVoc(new Vocabulaire("ト","to",2));
+L8.addVoc(new Vocabulaire("ナ","na",2));
+L8.addVoc(new Vocabulaire("ニ","ni",2));
+L8.addVoc(new Vocabulaire("ヌ","nu",2));
+L8.addVoc(new Vocabulaire("ネ","ne",2));
+L8.addVoc(new Vocabulaire("ノ","no",2));
+L8.addVoc(new Vocabulaire("ハ","ha",2));
+L8.addVoc(new Vocabulaire("ヒ","hi",2));
+L8.addVoc(new Vocabulaire("フ","fu",2));
+L8.addVoc(new Vocabulaire("ヘ","he",2));
+L8.addVoc(new Vocabulaire("ホ","ho",2));
+
+
+let L9 = new Lecon("9","Katakana MYRW");
+
+L9.addVoc(new Vocabulaire("マ","ma",2));
+L9.addVoc(new Vocabulaire("ミ","mi",2));
+L9.addVoc(new Vocabulaire("ム","mu",2));
+L9.addVoc(new Vocabulaire("メ","me",2));
+L9.addVoc(new Vocabulaire("モ","mo",2));
+L9.addVoc(new Vocabulaire("ヤ","ya",2));
+L9.addVoc(new Vocabulaire("ユ","yu",2));
+L9.addVoc(new Vocabulaire("ヨ","yo",2));
+L9.addVoc(new Vocabulaire("ラ","ra",2));
+L9.addVoc(new Vocabulaire("リ","ri",2));
+L9.addVoc(new Vocabulaire("ル","ru",2));
+L9.addVoc(new Vocabulaire("レ","re",2));
+L9.addVoc(new Vocabulaire("ロ","ro",2));
+L9.addVoc(new Vocabulaire("ワ","wa",2));
+L9.addVoc(new Vocabulaire("ヲ","wo",2));
+L9.addVoc(new Vocabulaire("ン","n",2));
+
+
+let L10 = new Lecon("10","Katakana ZDBP");
+
+L10.addVoc(new Vocabulaire("ザ","za",2));
+L10.addVoc(new Vocabulaire("ジ","ji",2));
+L10.addVoc(new Vocabulaire("ズ","zu",2));
+L10.addVoc(new Vocabulaire("ゼ","ze",2));
+L10.addVoc(new Vocabulaire("ゾ","zo",2));
+L10.addVoc(new Vocabulaire("ダ","da",2));
+L10.addVoc(new Vocabulaire("ヂ","di",2));
+L10.addVoc(new Vocabulaire("ヅ","du",2));
+L10.addVoc(new Vocabulaire("デ","de",2));
+L10.addVoc(new Vocabulaire("ド","do",2));
+L10.addVoc(new Vocabulaire("バ","ba",2));
+L10.addVoc(new Vocabulaire("ビ","bi",2));
+L10.addVoc(new Vocabulaire("ブ","bu",2));
+L10.addVoc(new Vocabulaire("ベ","be",2));
+L10.addVoc(new Vocabulaire("ボ","bo",2));
+L10.addVoc(new Vocabulaire("パ","pa",2));
+L10.addVoc(new Vocabulaire("ピ","pi",2));
+L10.addVoc(new Vocabulaire("プ","pu",2));
+L10.addVoc(new Vocabulaire("ペ","pe",2));
+L10.addVoc(new Vocabulaire("ポ","po",2));
+
+
+let L11 = new Lecon("11","Katakana KGNHBP");
+
+L11.addVoc(new Vocabulaire("キャ","kya",2));
+L11.addVoc(new Vocabulaire("キュ","kyu",2));
+L11.addVoc(new Vocabulaire("キョ","kyo",2));
+L11.addVoc(new Vocabulaire("ギャ","gya",2));
+L11.addVoc(new Vocabulaire("ギュ","gyu",2));
+L11.addVoc(new Vocabulaire("ギョ","gyo",2));
+L11.addVoc(new Vocabulaire("ニャ","nya",2));
+L11.addVoc(new Vocabulaire("ニュ","nyu",2));
+L11.addVoc(new Vocabulaire("ニョ","nyo",2));
+L11.addVoc(new Vocabulaire("ヒャ","hya",2));
+L11.addVoc(new Vocabulaire("ヒュ","hyu",2));
+L11.addVoc(new Vocabulaire("ヒョ","hyo",2));
+L11.addVoc(new Vocabulaire("ビャ","bya",2));
+L11.addVoc(new Vocabulaire("ビュ","byu",2));
+L11.addVoc(new Vocabulaire("ビョ","byo",2));
+L11.addVoc(new Vocabulaire("ピャ","pya",2));
+L11.addVoc(new Vocabulaire("ピュ","pyu",2));
+L11.addVoc(new Vocabulaire("ピョ","pyo",2));
+
+
+let L12 = new Lecon("12","Katakana MRJCS");
+
+L12.addVoc(new Vocabulaire("ミャ","mya",2));
+L12.addVoc(new Vocabulaire("ミュ","myu",2));
+L12.addVoc(new Vocabulaire("ミョ","myo",2));
+L12.addVoc(new Vocabulaire("リャ","rya",2));
+L12.addVoc(new Vocabulaire("リュ","ryu",2));
+L12.addVoc(new Vocabulaire("リョ","ryo",2));
+L12.addVoc(new Vocabulaire("ジャ","ja",2));
+L12.addVoc(new Vocabulaire("ジュ","ju",2));
+L12.addVoc(new Vocabulaire("ジョ","jo",2));
+L12.addVoc(new Vocabulaire("チャ","cha",2));
+L12.addVoc(new Vocabulaire("チュ","chu",2));
+L12.addVoc(new Vocabulaire("チョ","cho",2));
+L12.addVoc(new Vocabulaire("シャ","sha",2));
+L12.addVoc(new Vocabulaire("シュ","shu",2));
+L12.addVoc(new Vocabulaire("ショ","sho",2));
+
 
