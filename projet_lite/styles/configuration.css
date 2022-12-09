@@ -36,6 +36,10 @@ body{
 	transition: 0.3s;
 }
 
+#jeu1 #petit, #jeu2 #petit{
+	font-size: 1.1em;
+}
+
 #choixJeu p, #choixDifficulte p{
 	margin: 10px;
 	font-size: 1.5em;
