@@ -70,6 +70,8 @@ function afficheScore(){
 		elem3.innerHTML = "Tu feras mieux la prochaine fois 😉";
 	}else if(score==leconMelangee.length){
 		elem3.innerHTML = "🎆 C'est parfait, félicitations ! 🎆";
+	}else if(score>((leconMelangee.length/4)*3)){
+		elem3.innerHTML = "C'est presque parfait ! 👍";
 	}else{
 		elem3.innerHTML = "Continue l'entrainement 💪";
 	}
