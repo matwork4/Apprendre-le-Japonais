@@ -1,3 +1,9 @@
+body{
+    background: url("../assets/background/street2.png");
+    background-size: cover;
+    background-position: center;
+}
+
 .main img{
 	height: 80vh;
 	width: 70vh;
@@ -50,7 +56,7 @@
     border-radius: 5px;
 }
 .lecon a:hover{
-	background-color: #296487;
+	background-color: var(--main-bg-color);
 	color: white;
     box-shadow: 1px 1px 5px 1px black;
     cursor: pointer;
@@ -65,7 +71,7 @@ table{
 
 .voc{
 	border: 1px solid black;
-	background-color: whitesmoke;
+	background-color: var(--button-color);
 	height: 50px;
 	width: 40px;
 	text-align: center;
@@ -77,18 +83,63 @@ table{
 	box-shadow: 2px 2px 5px 1px black;
 	translate: -1px -1px;
 	/*cursor: pointer;*/
-	content: "Jouer";
+	background-color: var(--main-bg-color);
+	border-radius: 5px;
 	transition: 0.5s;
 }
 .voc:hover{
 
 	box-shadow: 1px 1px 5px 1px black;
 	cursor: pointer;
-	background-color: #296487;
+	background-color: var(--main-bg-color);
 	color: white;
 	transition: 0.3s;
 }
-.enBas{
-	margin: 4vh;
-	clear: both;
+
+#displayWriting{
+	/*display: none;*/
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	height: 35vh;
+  	width: 35vh;
+	border-radius: 5px;
+	background-color: white;
+	border: 2px solid black;
+	box-shadow: 2px 2px 5px 2px black;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#displayWriting #img{
+	height: 25vh;
+  	width: 30vh;
+  	border-radius: 5px;
+	/*background: url("../assets/writing/hiragana/あ.png");
+	background-size: cover;*/
+}
+
+
+#displayWriting #btn{
+	margin: 2vh;
+	height: 40px;
+	width: 80px;
+	border-radius: 6px;
+	background-color: lightgrey;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+#displayWriting #btn:hover{
+	background-color: #e66157;
+	color: white;
+    box-shadow: 1px 1px 5px 1px black;
+    cursor: pointer;
+    transition: 0.2s;
 }

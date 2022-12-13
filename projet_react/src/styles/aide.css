@@ -1,0 +1,36 @@
+body{
+    background: url("../assets/background/town3.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.aide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    background-color: var(--main-bg-color);
+    min-height: 20vh;
+    width: 120vh;
+    border-radius: 10px;
+    margin: 5vh;
+    color: white;
+    padding: 5vh;
+}
+
+.aide h1{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.aide p{
+    width: 120vh;
+}
+
+.aide img{
+    margin: 5vh;
+    width: 55vh;
+    border-radius: 5px;
+}

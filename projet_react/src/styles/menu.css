@@ -1,11 +1,16 @@
+body{
+    background: url("../assets/background/street1.png");
+    background-size: cover;
+    background-position: center;
+}
 
 .main a{
     margin: 2em;
-    height: 60px;
-    width: 200px;
+    height: 8vh;
+    width: 24vh;
     border-radius: 6px;
 
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
     text-decoration: none;
     color: black;
@@ -14,7 +19,8 @@
     justify-content: center;
     align-items: center;
 
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
+    background-color: var(--button-color);
 
 }
 
@@ -28,8 +34,22 @@
 
 .main p{
     position: absolute;
-    top: 20vh;
+    top: 10vh;
     left: 10vh;
-    /* Ajout de la taille pour le moment */
-    font-size: 18px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    background-color: var(--main-bg-color);
+    
+    
+    border-radius: 5px;
+    margin: 5vh;
+    color: white;
+    padding: 3vh;
+
+    font-size: 1em;
 }

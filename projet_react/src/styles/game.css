@@ -1,35 +1,122 @@
-
-.main a{
-    margin: 2em;
-    height: 60px;
-    width: 200px;
-    border-radius: 6px;
-
-    font-size: 1.2em;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: lightgrey;
-
+body{
+    background: url("../assets/background/landscape1.png");
+    background-size: cover;
+    background-position: center;
 }
 
 
-.main a:hover{
-    background-color: white;
+#panel{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	background-color: var(--main-bg-color);
+	height: 60vh;
+	width: 110vh;
+	border-radius: 10px;
+}
+
+#panel #caractere{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	height: 15vh;
+	width: 20vh;
+	background-color: var(--button-color);
+	font-size: 8vh;
+	border-radius: 5px;
+	border: 2px solid black;
+	margin: 10vh;
+}
+
+#reponses{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+#reponses .btn{
+	margin: 1vh;
+	height: 8vh;
+	width: 12vh;
+	font-size: 3vh;
+	border-radius: 6px;
+	border: 2px solid black;
+	background-color: var(--button-color);
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+#reponses .btn:hover{
+	box-shadow: 1px 1px 5px 1px black;
+	cursor: pointer;
+	background-color: var(--main-bg-color);
+	color: white;
+	transition: 0.3s;
+}
+
+.fleches{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	margin-top: 8vh;
+}
+
+.fleches .btn, .fleches a{
+	height: 50px;
+	width: 120px;
+	font-size: 1.2em;
+	border-radius: 6px;
+	background-color: lightgrey;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fleches .btn:hover, .fleches a:hover{
+	background-color: white;
     box-shadow: 1px 1px 5px 1px black;
     cursor: pointer;
     transition: 0.2s;
 }
 
-.main p{
-    position: absolute;
-    top: 20vh;
-    left: 10vh;
-    /* Ajout de la taille pour le moment */
-    font-size: 18px; 
+#page{
+	font-size: 1.5em;
+	/*color: white;*/
+}
+
+#score_div{
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	height: 55vh;
+	width: 110vh;
+	border-radius: 10px;
+	background-color: var(--main-bg-color);
+	/*border: 2px solid black;
+	box-shadow: 2px 2px 5px 2px black;*/
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#score_div p{
+	color: white;
+	font-size: 2em;
 }
