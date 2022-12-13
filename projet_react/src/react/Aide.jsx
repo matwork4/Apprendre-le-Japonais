@@ -8,7 +8,7 @@ const Aide = () => {
         <div class="aide">
             <h1>Page d'accueil (Apprendre le japonais)</h1>
             <p>Sur cette page, vous avez le choix de cliquer sur 2 boutons qui vous redirigeront sur les pages respectives des hiraganas ou des katakanas pour les apprendre.</p>
-            <img src='../assets/aide/AideAcceuil.PNG' />
+            <img src={require('../assets/aide/AideAcceuil.png')} />
         </div>
         <div class="aide" id="aideHiragana">
             <h1>Page Hiragana / Katakana</h1>
@@ -18,13 +18,13 @@ const Aide = () => {
             Sur cette page vous pouvez cliquer sur un caractère afin de le visualiser en plus grand pour apprendre à l'écrire et le mémoriser : 
             </p>
 
-            <img src='../assets/aide/AideHiragana.PNG' />
+            <img src={require('../assets/aide/AideHiragana.png')} />
             <p>
             Vous pouvez également cliquer sur le bouton "Jouer" afin de lancer un petit jeu sur la leçon souhaitée.
             <br />
             Sachant que les jeux contiennent les hiragana/katakana qui sont mis en avant lorsque vous passez votre souris sur la leçon, par exemple pour la leçon 1 :
             </p>
-            <img src='../assets/aide/AideHiragana2.PNG' />
+            <img src={require('../assets/aide/AideHiragana2.png')} />
         </div>
         <div class="aide" id="aideConfig">
             <h1>Page de Configuration</h1>
@@ -42,7 +42,7 @@ const Aide = () => {
             &nbsp - &nbsp 4 propositions pour le mode Normal <br />  
             &nbsp - &nbsp 6 propositions pour le mode Difficile
             </p>
-            <img src='../assets/aide/AideConfiguration.PNG' />
+            <img src={require('../assets/aide/AideConfiguration.png')} />
         </div>
 
         <div class="aide" id="aideJeu">
@@ -56,11 +56,11 @@ const Aide = () => {
             Alors, le bouton "suivant" apparaît pour passer à la question suivante.
             <br />
             </p>
-            <img src='../assets/aide/AideJeu.PNG' />
+            <img src={require('../assets/aide/AideJeu.png')} />
             <p>
             Une fois la partie terminée, le score est affiché : 
             </p>
-            <img src='../assets/aide/AideResultat.PNG' />
+            <img src={require('../assets/aide/AideResultat.png')} />
             <p>
             Note : si vous quittez la partie avant la fin le score ne s'affichera pas.
             </p>
