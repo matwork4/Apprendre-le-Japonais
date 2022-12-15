@@ -1,50 +1,46 @@
-body{
-    background: url("../assets/background/street2.png");
-    background-size: cover;
-    background-position: center;
-}
 
-.main img{
+
+#hiragana_page img{
 	height: 80vh;
 	width: 70vh;
 }
 
-.main{
+#hiragana_page{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
-.main h3{
+#hiragana_page h3{
 	text-align: center;
 	margin-bottom: 5px;
 }
-#textRight{
+#hiragana_page #textRight{
 	text-align: right;
 	margin-right: 6vh;
 }
-#textLeft{
+#hiragana_page #textLeft{
 	text-align: left;
 	margin-left: 6vh;
 }
 
-#left, #right{
+#hiragana_page #left, #hiragana_page #right{
 	margin: 4vh;
 }
 
-.lecon{
+#hiragana_page .lecon{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 }
-.lecon .button{
+#hiragana_page .lecon .button{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	font-size: 1.1em;
 }
 
-.lecon a{
+#hiragana_page .lecon a{
 	text-decoration: none;
     color: black;
     font-size: 1em;
@@ -55,7 +51,7 @@ body{
     background-color: lightgrey;
     border-radius: 5px;
 }
-.lecon a:hover{
+#hiragana_page .lecon a:hover{
 	background-color: var(--main-bg-color);
 	color: white;
     box-shadow: 1px 1px 5px 1px black;
@@ -64,12 +60,12 @@ body{
 }
 
 
-table{
+#hiragana_page table{
 	border-collapse: collapse;
   	border-spacing: 0;
 }
 
-.voc{
+#hiragana_page .voc{
 	border: 1px solid black;
 	background-color: var(--button-color);
 	height: 50px;
@@ -79,7 +75,7 @@ table{
 }
 
 
-.lecon:hover{
+#hiragana_page .lecon:hover{
 	box-shadow: 2px 2px 5px 1px black;
 	translate: -1px -1px;
 	/*cursor: pointer;*/
@@ -87,7 +83,7 @@ table{
 	border-radius: 5px;
 	transition: 0.5s;
 }
-.voc:hover{
+#hiragana_page .voc:hover{
 
 	box-shadow: 1px 1px 5px 1px black;
 	cursor: pointer;
@@ -96,7 +92,7 @@ table{
 	transition: 0.3s;
 }
 
-#displayWriting{
+#hiragana_page #displayWriting{
 	/*display: none;*/
 	position: absolute;
 	top: 50%;
@@ -115,7 +111,7 @@ table{
 	align-items: center;
 }
 
-#displayWriting #img{
+#hiragana_page #displayWriting #img{
 	height: 25vh;
   	width: 30vh;
   	border-radius: 5px;
@@ -124,7 +120,7 @@ table{
 }
 
 
-#displayWriting #btn{
+#hiragana_page #displayWriting #btn{
 	margin: 2vh;
 	height: 40px;
 	width: 80px;
@@ -136,7 +132,7 @@ table{
     text-decoration: none;
     color: black;
 }
-#displayWriting #btn:hover{
+#hiragana_page #displayWriting #btn:hover{
 	background-color: #e66157;
 	color: white;
     box-shadow: 1px 1px 5px 1px black;

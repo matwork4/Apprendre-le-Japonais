@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Aide = () => {
     return (
-        <div class="main">
+    <div class="main" id="aide_page">
         <div class="aide">
             <h1>Page d'accueil (Apprendre le japonais)</h1>
             <p>Sur cette page, vous avez le choix de cliquer sur 2 boutons qui vous redirigeront sur les pages respectives des hiraganas ou des katakanas pour les apprendre.</p>
@@ -65,7 +65,9 @@ const Aide = () => {
             Note : si vous quittez la partie avant la fin le score ne s'affichera pas.
             </p>
         </div>
+        
     </div>
+
 
 
     );

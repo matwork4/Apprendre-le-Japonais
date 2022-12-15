@@ -21,7 +21,7 @@ function testJS(){
 }
 
 	return (
-		<div class="main">
+		<div class="main" id="home_page">
 			
 			<p >L'alphabet japonais utilise deux types de caractères : Hiragana et Katakana. <br/>
 			Les Hiraganas sont utilisés pour représenter les sons en japonais (c.a.d les syllabes), tandis que les Katakanas sont utilisés pour écrire les mots d'origine étrangère. <br/><br/>

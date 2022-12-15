@@ -1,11 +1,7 @@
-body{
-    background: url("../assets/background/landscape1.png");
-    background-size: cover;
-    background-position: center;
-}
 
 
-#panel{
+
+#game_page #panel{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -18,7 +14,7 @@ body{
 	border-radius: 10px;
 }
 
-#panel #caractere{
+#game_page #panel #caractere{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -33,7 +29,7 @@ body{
 	margin: 10vh;
 }
 
-#reponses{
+#game_page #reponses{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -41,7 +37,7 @@ body{
 	width: 100%;
 }
 
-#reponses .btn{
+#game_page #reponses .btn{
 	margin: 1vh;
 	height: 8vh;
 	width: 12vh;
@@ -56,7 +52,7 @@ body{
     color: black;
 }
 
-#reponses .btn:hover{
+#game_page #reponses .btn:hover{
 	box-shadow: 1px 1px 5px 1px black;
 	cursor: pointer;
 	background-color: var(--main-bg-color);
@@ -64,7 +60,7 @@ body{
 	transition: 0.3s;
 }
 
-.fleches{
+#game_page .fleches{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -73,7 +69,7 @@ body{
 	margin-top: 8vh;
 }
 
-.fleches .btn, .fleches a{
+#game_page .fleches .btn, #game_page .fleches a{
 	height: 50px;
 	width: 120px;
 	font-size: 1.2em;
@@ -86,19 +82,19 @@ body{
     color: black;
 }
 
-.fleches .btn:hover, .fleches a:hover{
+#game_page .fleches .btn:hover, #game_page .fleches a:hover{
 	background-color: white;
     box-shadow: 1px 1px 5px 1px black;
     cursor: pointer;
     transition: 0.2s;
 }
 
-#page{
+#game_page #page{
 	font-size: 1.5em;
 	/*color: white;*/
 }
 
-#score_div{
+#game_page #score_div{
 	position: absolute;
 	top: 50%;
   	left: 50%;
@@ -116,7 +112,7 @@ body{
 	align-items: center;
 }
 
-#score_div p{
+#game_page #score_div p{
 	color: white;
 	font-size: 2em;
 }

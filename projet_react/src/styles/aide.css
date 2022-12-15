@@ -1,10 +1,6 @@
-body{
-    background: url("../assets/background/town3.png");
-    background-size: cover;
-    background-position: center;
-}
 
-.aide{
+
+#aide_page .aide{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,16 +16,16 @@ body{
     padding: 5vh;
 }
 
-.aide h1{
+#aide_page .aide h1{
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
-.aide p{
+#aide_page .aide p{
     width: 120vh;
 }
 
-.aide img{
+#aide_page .aide img{
     margin: 5vh;
     width: 55vh;
     border-radius: 5px;

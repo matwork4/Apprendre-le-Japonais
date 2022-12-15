@@ -67,7 +67,7 @@ const divStyle = {
 
 
   return (
-    <div class="main">
+    <div class="main" id="hiragana_page">
 
 
       <div id="left">

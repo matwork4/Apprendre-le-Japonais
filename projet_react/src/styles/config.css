@@ -1,11 +1,7 @@
-body{
-    background: url("../assets/background/town2.png");
-    background-size: cover;
-    background-position: center;
-}
 
 
-#choixJeu{
+
+#config_page #choixJeu{
 	width: 100%;
 	height: 30vh;
 	display: flex;
@@ -14,7 +10,7 @@ body{
 	align-items: center;
 }
 
-#jeu1, #jeu2{
+#config_page #jeu1, #config_page #jeu2{
 	height: 15vh;
 	width: 30vh;
 	display: flex;
@@ -28,7 +24,7 @@ body{
 	border-radius: 6px;
 }
 
-#jeu1:hover, #jeu2:hover{
+#config_page #jeu1:hover, #config_page #jeu2:hover{
 	box-shadow: 1px 1px 5px 1px black;
 	cursor: pointer;
 	background-color: var(--main-bg-color);
@@ -36,16 +32,16 @@ body{
 	transition: 0.3s;
 }
 
-#jeu1 #petit, #jeu2 #petit{
+#config_page #jeu1 #petit, #config_page #jeu2 #petit{
 	font-size: 1.1em;
 }
 
-#choixJeu p, #choixDifficulte p{
+#config_page #choixJeu p, #config_page #choixDifficulte p{
 	margin: 10px;
 	font-size: 1.5em;
 }
 
-#choixDifficulte{
+#config_page #choixDifficulte{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -53,7 +49,7 @@ body{
 	text-align: center;
 }
 
-#choixDifficulte a{
+#config_page #choixDifficulte a{
 	margin: 1.2vh;
 	height: 50px;
 	width: 100px;
@@ -67,7 +63,7 @@ body{
     color: black;
 }
 
-#choixDifficulte a:hover{
+#config_page #choixDifficulte a:hover{
 	background-color: white;
     box-shadow: 1px 1px 5px 1px black;
     cursor: pointer;

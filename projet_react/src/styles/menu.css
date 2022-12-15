@@ -1,10 +1,6 @@
-body{
-    background: url("../assets/background/street1.png");
-    background-size: cover;
-    background-position: center;
-}
 
-.main a{
+
+#home_page a{
     margin: 2em;
     height: 8vh;
     width: 24vh;
@@ -25,14 +21,14 @@ body{
 }
 
 
-.main a:hover{
+#home_page a:hover{
     background-color: white;
     box-shadow: 1px 1px 5px 1px black;
     cursor: pointer;
     transition: 0.2s;
 }
 
-.main p{
+#home_page p{
     position: absolute;
     top: 10vh;
     left: 10vh;

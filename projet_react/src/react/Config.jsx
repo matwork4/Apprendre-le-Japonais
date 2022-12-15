@@ -27,7 +27,7 @@ function choixJeu(num){
 
 function selectJeu(num){
 	var elem = document.getElementById("jeu"+num);
-	elem.style.background = "rgba(140, 80, 100, 0.85)";
+	elem.style.background = "rgba(160, 80, 80, 0.8)";
 	elem.style.color = "white";
 	elem.style.boxShadow= "1px 1px 5px 1px black";
 }
@@ -87,7 +87,7 @@ const divStyle = {
 
 
 	return (
-		<div class="main">
+		<div class="main" id="config_page">
 
 			<div id="choixJeu">
 				<div id="jeu1" onClick={() => choixJeu(1)}>

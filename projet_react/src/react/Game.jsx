@@ -658,7 +658,7 @@ function testJS(){
 }
 
 	return (
-		<div class="main">
+		<div class="main" id="game_page">
 			<div id="panel">
 			  <div id="caractere">Vide</div>
 			  <div id="reponses">
