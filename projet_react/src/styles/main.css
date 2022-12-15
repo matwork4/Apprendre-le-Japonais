@@ -3,31 +3,40 @@
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: Monaco;
+	font-family: cursive;
 	vertical-align: baseline;
+	--main-bg-color: rgba(160, 80, 80, 0.9);
+	--button-color: rgba(255,255,255,0.9);;
+}
+
+body{
+    background: url("../assets/background/castle.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .header {
 	display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
-	background-color: rgba(21, 70, 94, 0.85);
+	background-color: var(--main-bg-color);
 	overflow: hidden;
 	height: 10vh;
 	color: white;
     box-shadow: 3px 3px 15px 2px black;
 }
 .header h1{
-	margin: 3vh;
-	font-size: 1.4em;
+	/*margin: 3vh;*/
+	font-size: 1.5em;
 }
 .header a{
 	margin: 2vh;
 	height: 40px;
 	width: 80px;
 	border-radius: 6px;
-	background-color: lightgrey;
+	background-color: var(--button-color);
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -49,15 +58,13 @@
     align-items: center;
 }
 
-.footer {
+.footer{
 	height: 10vh;
 	display: flex;
     flex-direction: row;
     justify-content: center;
-
-    background-color: rgba(21, 70, 94, 0.85);
+    align-items: center;
+    font-size: 1.1em;
+    background-color: var(--main-bg-color);
     color: white;
-}
-.footer p{
-	margin: 3vh;
 }
