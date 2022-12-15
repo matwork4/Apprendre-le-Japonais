@@ -49,6 +49,10 @@
 	text-align: center;
 }
 
+#config_page #choixDifficulte p{
+	color: white;
+}
+
 #config_page #choixDifficulte a{
 	margin: 1.2vh;
 	height: 50px;

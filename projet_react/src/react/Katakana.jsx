@@ -21,11 +21,12 @@ function openWriting(car){
     elem.style.display = "";
     var elem2 = document.getElementById("img");
     if(getChoixType()=="hiragana"){
-        elem2.style.background = "url('../assets/writing/hiragana/"+car+".png')";
+      var img = require('../assets/writing/hiragana/'+car+'.png');
     }else{
-        elem2.style.background = "url('../assets/writing/katakana/"+car+".png')";
+      var img = require('../assets/writing/katakana/'+car+'.png');
     }
-    elem2.style.backgroundSize = "cover";
+    elem2.src = img;
+    //elem2.style.backgroundSize = "cover";
 }
 
 function setChoixLecon(num){
@@ -282,7 +283,7 @@ const divStyle = {
       </div>
 
       <div id="displayWriting" style={divStyle}>
-        <div id="img"></div>
+        <img id="img"></img>
         <div id="btn" onClick={() => closeWriting()}>Fermer</div>
       </div>
 

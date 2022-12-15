@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import '../styles/game.css';
 
 import { Link } from "react-router-dom";
@@ -307,7 +308,6 @@ L12.addVoc(new Vocabulaire("ショ","sho",2));
 
 
 
-
 /* -------------
  *   Variables
  * -------------
@@ -481,36 +481,76 @@ function addQuestionDOM(q){
  */
 function addReponsesDOM(l,bonneReponse){
 
-	var elem = document.getElementById("reponses");
+	var elemParent = document.getElementById("reponses");
 	var r;
+	var listeReactElements = [];
 
 	for(let i=0;i<l.length;i++){
 		//console.log("reponse "+l[i]);
 
+		/*
 		r = document.createElement("div");
 		r.setAttribute("class","btn");
 		r.setAttribute("id","r"+(i+1));
+		//onClick={() => suivant()}
 		if(l[i] == bonneReponse){
-			r.setAttribute("onclick","repondre('r"+(i+1)+"',true)");
+			r.setAttribute("onClick","{() => repondre('r"+(i+1)+"',true)}");
 			idBonneReponse = "r"+(i+1);
 		}else{
-			r.setAttribute("onclick","repondre('r"+(i+1)+"')",false);
+			r.setAttribute("onClick","{() => repondre('r"+(i+1)+"',false)}");
 		}
 		r.innerHTML = l[i];
-		elem.appendChild(r);
+		elem.appendChild(r);*/
+
+		//on créer un élément en React
+		let elemReact;
+
+		if(l[i] == bonneReponse){
+			elemReact = React.createElement(
+				'div',
+				{ 
+					class: "btn",
+					id: "r"+(i+1),
+					onClick: () => {repondre('r'+(i+1),true)}
+				},
+				l[i]
+			)
+			idBonneReponse = "r"+(i+1);
+		}else{
+			elemReact = React.createElement(
+				'div',
+				{ 
+					class: "btn",
+					id: "r"+(i+1),
+					onClick: () => {repondre('r'+(i+1),false)}
+				},
+				l[i]
+			)
+		}
+		listeReactElements.push(elemReact);
 	}
+	//on ajoute au DOM react
+	ReactDOM.render(listeReactElements,elemParent);
+
 }
 
 /* Retire la liste des réponses du DOM
  */
 function removeReponsesDOM(){
-	document.getElementById("reponses").innerHTML = "";
+	//document.getElementById("reponses").innerHTML = "";
+
+	/* en react on ne peut pas retirer des elements facilement
+	 * a la place on modifie les elements présents 
+	 */ 
+
+	ReactDOM.unmountComponentAtNode(document.getElementById('reponses'));
 }
 
 
 /* Fonction pour repondre 
 */
 function repondre(id,isBonneReponse){
+	console.log("fonction repondre, id : "+id);
 
   if(!dejaJoue){
 	if(isBonneReponse){
@@ -652,7 +692,13 @@ function getChoixType(){
 	return a;
 }
 
+/* Relance la page (pour rejouer)
+ */
+function refreshPage() {
+  window.location.reload(false);
+}
 
+//fonction de test pour les boutons en react
 function testJS(){
     console.log("test js");
 }
@@ -660,14 +706,14 @@ function testJS(){
 	return (
 		<div class="main" id="game_page">
 			<div id="panel">
-			  <div id="caractere">Vide</div>
+			  <div id="caractere" onClick={() => genereDOM()} >Jouer</div>
 			  <div id="reponses">
 			  </div>
 			</div>
 			<div class="fleches">
-				<Link to="../game" class="btn" id="terminer" style={divStyle}>Rejouer</Link>
-			  	<p id="page">vide</p>
-			  	<div class="btn" id="suivant" onClick={() => suivant()} style={divStyle}>Suivant</div>
+				<Link to="../game" class="btn" id="terminer" onClick={() => refreshPage()} style={divStyle}>Rejouer</Link>
+			  <p id="page"></p>
+			  <div class="btn" id="suivant" onClick={() => suivant()} style={divStyle}>Suivant</div>
 			</div>
 			<div id="score_div" style={divStyle}>
 				<p id="score">Score : </p>
