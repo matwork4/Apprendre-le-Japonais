@@ -36,6 +36,8 @@ body{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	background-color: var(--main-bg-color);
+	border-radius: 10px;
 }
 .lecon .button{
 	display: flex;
@@ -63,7 +65,6 @@ body{
     transition: 0.2s;
 }
 
-
 table{
 	border-collapse: collapse;
   	border-spacing: 0;
@@ -83,7 +84,7 @@ table{
 	box-shadow: 2px 2px 5px 1px black;
 	translate: -1px -1px;
 	/*cursor: pointer;*/
-	background-color: var(--main-bg-color);
+	/*background-color: var(--button-color);*/
 	border-radius: 5px;
 	transition: 0.5s;
 }
